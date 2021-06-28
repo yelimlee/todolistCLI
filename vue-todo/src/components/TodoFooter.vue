@@ -1,7 +1,7 @@
 <template>
   <div class="clearAllContainer">
     <span class="clearAllBtn" v-on:click="clearTodo">
-      Clear All
+      Clear All.
     </span>
   </div>
 </template>
