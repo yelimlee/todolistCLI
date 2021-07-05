@@ -39,7 +39,8 @@ export default {
     //입력값(할 일)을 저장하는 메소드 
     addTodo(){
       if(this.newTodoItem !==''){
-      this.$emit('addTodoItem', this.newTodoItem)
+      //this.$emit('addTodoItem', this.newTodoItem)
+      this.$store.commit('addOneItem', this.newTodoItem);
       //메소드 호출
       this.clearInput();
       }else{
